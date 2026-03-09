@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Web Developer</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons (Sleek, minimal icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background Effects -->
+    <div class="glow-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">Dev<span class="accent">.</span></a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link btn-contact">Let's Talk</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#contact" class="btn btn-primary mt-4">Let's Talk</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-content reveal">
+                <span class="badge">Available for Work</span>
+                <h1 class="hero-title">
+                    Hi, I'm a <br>
+                    <span class="text-gradient">Web Developer</span> <br>
+                    & CS Student
+                </h1>
+                <p class="hero-subtitle">
+                    Crafting digital experiences with a focus on modern design, performance, and problem-solving.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal fade-left">
+                <!-- Abstract visual representing code/logic -->
+<div class="robo-container">
+    <div class="robo-head-wrapper">
+        <div class="robo-head">
+            <!-- Background Glow -->
+            <div class="robo-core"></div>
+            
+            <!-- Floating Tech Rings -->
+            <div class="tech-ring ring-1"></div>
+            <div class="tech-ring ring-2"></div>
+            <div class="tech-ring ring-3"></div>
+
+            <!-- Floating Eyes -->
+            <div class="eye-socket left">
+                <div class="eye-ring"></div>
+                <div class="pupil"></div>
+            </div>
+            <div class="eye-socket right">
+                <div class="eye-ring"></div>
+                <div class="pupil"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title reveal">About <span class="text-gradient">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>I'm a passionate web developer and Computer Science student who thrives on building modern, performant, and beautiful digital experiences.</p>
+                    <p>My journey in tech began with a curiosity about how things work under the hood, leading me to explore full-stack development. I enjoy bridging the gap between engineering and design—combining technical knowledge with a keen eye for aesthetics to create products that not only work well but feel premium.</p>
+                    <div class="stats-grid mt-4">
+                        <div class="stat-card glass-panel">
+                            <h3 class="text-gradient">3+</h3>
+                            <p>Years Coding</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h3 class="text-gradient">15+</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title reveal">My <span class="text-gradient">Arsenal</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-panel reveal fade-left">
+                    <i class="ph ph-file-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React.js</p>
+                </div>
+                <div class="skill-card glass-panel reveal fade-left" style="transition-delay: 0.1s">
+                    <i class="ph ph-database"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, Python</p>
+                </div>
+                <div class="skill-card glass-panel reveal fade-left" style="transition-delay: 0.2s">
+                    <i class="ph ph-hard-drives"></i>
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-card glass-panel reveal fade-left" style="transition-delay: 0.3s">
+                    <i class="ph ph-wrench"></i>
+                    <h3>Tools</h3>
+                    <p>Git, Webpack, Figma, VS Code</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title reveal">Featured <span class="text-gradient">Work</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass-panel reveal">
+                    <div class="project-img">
+                        <div class="placeholder-img">E-Commerce UI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack Gen-Z streetwear store with complex animations and seamless cart functionality.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="ph ph-github-logo"></i></a>
+                            <a href="#" class="btn-icon"><i class="ph ph-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-panel reveal" style="transition-delay: 0.1s">
+                    <div class="project-img">
+                        <div class="placeholder-img">CMS Dashboard UI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dynamic Portfolio CMS</h3>
+                        <p>A headless CMS portfolio generator allowing users to dynamically add projects and skills.</p>
+                        <div class="tech-stack">
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="ph ph-github-logo"></i></a>
+                            <a href="#" class="btn-icon"><i class="ph ph-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <h2 class="section-title reveal">My <span class="text-gradient">Journey</span></h2>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date text-gradient">2025 - Present</span>
+                        <h3>Software Engineering Intern</h3>
+                        <h4>Tech Startup Inc.</h4>
+                        <p>Collaborated closely with the engineering team to optimize backend API response times by 30% and built reusable frontend React components for the main dashboard.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="date text-gradient">2023 - Present</span>
+                        <h3>Computer Science B.S.</h3>
+                        <h4>University Name</h4>
+                        <p>Focusing on Data Structures, Algorithms, and Software Architecture. Consistently maintaining a spot on the Dean's List while leading the university's Web Development Club.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="contact-container glass-panel reveal">
+                <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="social-links mt-4">
+                    <a href="mailto:hello@example.com" class="social-icon"><i class="ph ph-envelope-simple"></i></a>
+                    <a href="https://github.com" target="_blank" class="social-icon"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                </div>
+                <!-- Call to action button -->
+                <div class="mt-4">
+                    <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Developer Name. Built with Vanilla Web Tech.</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
