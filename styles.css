@@ -19,8 +19,8 @@
     --glass-blur: blur(16px);
 
     /* Typography */
-    --font-sans: 'Outfit', sans-serif;
-    --font-display: 'Space Grotesk', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+    --font-display: 'Syne', sans-serif;
 
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -888,6 +888,7 @@ body.hovering .cursor-outline {
 @media (max-width: 900px) {
     .nav-links {
         display: none;
+        /* Will implement mobile menu later */
     }
 
     .mobile-menu-btn {
@@ -899,7 +900,6 @@ body.hovering .cursor-outline {
         justify-content: center;
         text-align: center;
         gap: 3rem;
-        padding-top: 120px;
     }
 
     .hero-content {
@@ -908,104 +908,17 @@ body.hovering .cursor-outline {
         align-items: center;
     }
 
-    .hero-title {
-        font-size: clamp(2.5rem, 8vw, 4rem);
-    }
-
     .hero-subtitle {
         text-align: center;
-        margin-bottom: 2rem;
     }
 
     .hero-visual {
         justify-content: center;
-        height: 350px;
+        height: 300px;
     }
 
-    .robo-container {
-        height: 400px;
-    }
-    
-    .robo-head {
+    .glass-orb {
         width: 250px;
-        height: 280px;
-    }
-
-    .eye-socket {
-        width: 90px;
-        height: 90px;
-        top: 20%;
-    }
-
-    .section {
-        padding: 60px 5%;
-    }
-
-    .section-title {
-        font-size: clamp(2rem, 6vw, 2.5rem);
-        margin-bottom: 2rem;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .timeline::before {
-        left: 15px;
-    }
-
-    .timeline-item {
-        padding-left: 35px;
-    }
-
-    .timeline-dot {
-        left: 7px;
-        width: 14px;
-        height: 14px;
-    }
-    
-    .contact-container {
-        padding: 2rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-cta {
-        flex-direction: column;
-        width: 100%;
-        gap: 1rem;
-    }
-
-    .hero-cta .btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .mobile-nav-links {
-        gap: 1.5rem;
-    }
-
-    .mobile-nav-link {
-        font-size: 1.2rem;
-    }
-
-    .stat-card h3 {
-        font-size: 2rem;
-    }
-
-    .project-img {
-        height: 180px;
-    }
-
-    .timeline-content h3 {
-        font-size: 1.1rem;
+        height: 250px;
     }
 }
