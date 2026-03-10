@@ -135,8 +135,8 @@ window.addEventListener('mousemove', (e) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Optional: Stop observing once revealed
-                // revealObserver.unobserve(entry.target); 
+            } else {
+                entry.target.classList.remove('active');
             }
         });
     }, {
