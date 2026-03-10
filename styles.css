@@ -19,8 +19,8 @@
     --glass-blur: blur(16px);
 
     /* Typography */
-    --font-sans: 'Inter', sans-serif;
-    --font-display: 'Syne', sans-serif;
+    --font-sans: 'Outfit', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
 
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -396,8 +396,8 @@ body.hovering .cursor-outline {
     perspective: 2000px;
     /* Deeper perspective for the larger head */
     width: 100%;
-    height: 650px;
-    /* Increased container height */
+    height: 300px;
+    /* Reduced container height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,7 +411,7 @@ body.hovering .cursor-outline {
 .robo-head {
     /* Scaled up from 280px to 380px */
     width: 380px;
-    height: 420px;
+    height: 180px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -422,7 +422,7 @@ body.hovering .cursor-outline {
 /* 5. Scaled & Detailed Eyes */
 .eye-socket {
     position: absolute;
-    top: 25%;
+    top: 25px;
     width: 130px;
     height: 130px;
     /* Scaled up */
@@ -669,6 +669,8 @@ body.hovering .cursor-outline {
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -703,6 +705,9 @@ body.hovering .cursor-outline {
 
 .project-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-info h3 {
@@ -734,6 +739,7 @@ body.hovering .cursor-outline {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .btn-icon {
