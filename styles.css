@@ -49,7 +49,27 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     cursor: none;
-    /* Hide default cursor to use custom one */
+}
+
+/* 1. The Track (The deep space path) */
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: #050505; /* Deep space black */
+}
+
+/* 2. The Thumb (The Comet) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #fff, #4facfe, #00f2fe);
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px rgba(79, 172, 254, 0.7); /* The glowing aura */
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* 3. The Hover Effect (Ignition!) */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.9);
 }
 
 #myVideo {
